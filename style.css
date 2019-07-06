@@ -22,7 +22,7 @@ body {
 [class*="col-"] {
 	float: left;
 }
-.row:after {
+.row:after, .menu:after {
 	content: "";
 	clear: both;
 	display: block;
@@ -31,3 +31,23 @@ body {
 	background-color: rgba(255,255,255,0.75);
 	padding: 25px 0;
 }
+.menu li {
+	width: 25%;
+	float: left;
+	border-left: 1px solid #2c71b8;
+}
+.menu li:last-child {
+	border-right: 1px solid #2c71b8;
+}
+.menu a {
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	text-align: center;/*выравнивание по горизтекста онтали*/
+	line-height: 50px;/*выравнивание текста по вертикали*/
+	font-size: 21px;
+	color: #2c71b8;
+}
+.menu a:hover {
+	background-color: #2c71b8;
+	color: #ffffff;
